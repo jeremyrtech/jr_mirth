@@ -1,0 +1,13 @@
+importPackage(org.apache.commons.io)
+
+var obj =  org.apache.commons.io.FileSystemUtils;
+var obj1 = obj.freeSpaceKb('C:');
+var total = obj1 / 1000000;
+var newTotal = total.toString();
+newTotal.substring(4, 6);
+
+//logger.info(object.getTotalSpace());
+
+logger.info('Disk space is: ' + newTotal +' GB');
+
+return;
